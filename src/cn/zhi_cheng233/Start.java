@@ -1,6 +1,8 @@
 package cn.zhi_cheng233;
 
 import cn.zhi_cheng233.ui.main;
+import cn.zhi_cheng233.ui.startui;
+
 import javax.swing.*;
 public class Start {
     public static void main(String [] args) {
@@ -11,6 +13,7 @@ public class Start {
 
         String anther = "Ö¾³Ézhi_cheng";
 
-        main.showGUI();
+        //main.showGUI();
+        startui.showGUI();
     }
 }

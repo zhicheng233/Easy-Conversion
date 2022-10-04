@@ -1,4 +1,7 @@
 package cn.zhi_cheng233.ui;
+import com.formdev.flatlaf.FlatDarculaLaf;
+import com.formdev.flatlaf.FlatLightLaf;
+
 import javax.swing.*;
 
 public class main {
@@ -13,6 +16,7 @@ public class main {
 
     }
     public static void showGUI(){
+        FlatDarculaLaf.setup();
 
             //œ‘ æGUI
             javax.swing.SwingUtilities.invokeLater(new Runnable() {
