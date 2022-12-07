@@ -7,10 +7,10 @@ import javax.swing.*;
 public class main {
     public static void createAndShowGUI(){
         JFrame.setDefaultLookAndFeelDecorated(false);
-        JFrame frame = new JFrame("ÇáËÉ×ª»»");
+        JFrame frame = new JFrame("è½»æ¾è½¬æ¢");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JLabel lable = new JLabel("Text");
-        //ÉèÖÃ´°¿Ú³¤¿í
+        //è®¾ç½®çª—å£é•¿å®½
 
         frame.getContentPane().add(lable);
         frame.pack();
@@ -20,7 +20,7 @@ public class main {
     public static void showGUI(){
         FlatDarculaLaf.setup();
 
-            //ÏÔÊ¾GUI
+            //æ˜¾ç¤ºGUI
             javax.swing.SwingUtilities.invokeLater(new Runnable() {
                 @Override
                 public void run() {

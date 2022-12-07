@@ -6,12 +6,12 @@ import cn.zhi_cheng233.ui.startui;
 import javax.swing.*;
 public class Start {
     public static void main(String [] args) {
-        //³õÊ¼»¯
+        //åˆå§‹åŒ–
         String name = "Easy-Conversion";
 
         String version = "Beta 1.0";
 
-        String anther = "Ö¾³Ézhi_cheng";
+        String anther = "å¿—æˆzhi_cheng";
 
         //main.showGUI();
         startui.showGUI();

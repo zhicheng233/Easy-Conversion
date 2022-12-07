@@ -12,35 +12,35 @@ public class startui {
         JFrame.setDefaultLookAndFeelDecorated(false);
         JFrame frame = new JFrame("starting....");
         frame.setLayout(null);
-        //ÉèÖÃÍ¼Æ¬
-        //½«Í¼Æ¬´«ÈëJLabel×é¼şÔÙºÍJFrameÒ»ÆğÏÔÊ¾
+        //è®¾ç½®å›¾ç‰‡
+        //å°†å›¾ç‰‡ä¼ å…¥JLabelç»„ä»¶å†å’ŒJFrameä¸€èµ·æ˜¾ç¤º
         ImageIcon bg=new ImageIcon("src/Resources/StartUI/StartPictures.png");
-        JLabel label=new JLabel(bg);//ĞÂ½¨label×é¼ş²¢´«ÈëbgÍ¼Æ¬
-        //¸ù¾İÍ¼Æ¬ÏñËØÀ´ÉèÖÃlable×é¼ş³¤¿í
+        JLabel label=new JLabel(bg);//æ–°å»ºlabelç»„ä»¶å¹¶ä¼ å…¥bgå›¾ç‰‡
+        //æ ¹æ®å›¾ç‰‡åƒç´ æ¥è®¾ç½®lableç»„ä»¶é•¿å®½
         label.setSize(bg.getIconWidth(),bg.getIconHeight());
         frame.getLayeredPane().add(label,new Integer (Integer.MIN_VALUE));
         JPanel pan=(JPanel)frame.getContentPane();
         pan.setOpaque(false);
-        //¼ÓÔØÎÄ×Ö
-        JLabel loadtext = new JLabel("Waiting...µÈ´ı³õÊ¼»¯ÏìÓ¦ÖĞ...");
+        //åŠ è½½æ–‡å­—
+        JLabel loadtext = new JLabel("Waiting...ç­‰å¾…åˆå§‹åŒ–å“åº”ä¸­...");
         loadtext.setBounds(5,bg.getIconHeight()-60,bg.getIconWidth(),100);
         loadtext.setForeground(Color.WHITE);
-        loadtext.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 14));
+        loadtext.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 14));
         loadtext.setVisible(true);
         frame.add(loadtext);
 
-        //¸ù¾İÍ¼Æ¬ÏñËØÀ´ÉèÖÃ´°¿Ú³¤¿í
+        //æ ¹æ®å›¾ç‰‡åƒç´ æ¥è®¾ç½®çª—å£é•¿å®½
         frame.setSize(bg.getIconWidth(),bg.getIconHeight());
-       //ÉèÖÃ´°¿ÚÎŞ±ß¿ò
-        frame.setLocationRelativeTo(null);//¾ÓÖĞ
+       //è®¾ç½®çª—å£æ— è¾¹æ¡†
+        frame.setLocationRelativeTo(null);//å±…ä¸­
         frame.setUndecorated(true);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(false);// ±¾´°¿ÚÒş²Ø,
+        frame.setVisible(false);// æœ¬çª—å£éšè—,
 
         main.showGUI();
 
-        frame.dispose();//±¾´°¿ÚÏú»Ù,ÊÍ·ÅÄÚ´æ×ÊÔ´
+        frame.dispose();//æœ¬çª—å£é”€æ¯,é‡Šæ”¾å†…å­˜èµ„æº
 
 
 
@@ -50,7 +50,7 @@ public class startui {
     public static void showGUI(){
         FlatDarculaLaf.setup();
 
-        //ÏÔÊ¾GUI
+        //æ˜¾ç¤ºGUI
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
