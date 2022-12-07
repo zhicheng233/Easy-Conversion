@@ -1,5 +1,7 @@
 package cn.zhi_cheng233.ui;
 
+import cn.zhi_cheng233.Start;
+import cn.zhi_cheng233.function.update;
 import com.formdev.flatlaf.FlatDarculaLaf;
 
 import javax.swing.*;
@@ -34,9 +36,17 @@ public class startui {
         frame.setUndecorated(true);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(false);// 本窗口隐藏,
+
+        main.showGUI();
+
+        frame.dispose();//本窗口销毁,释放内存资源
+
 
 
     }
+    
+
     public static void showGUI(){
         FlatDarculaLaf.setup();
 

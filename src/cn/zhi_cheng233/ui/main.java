@@ -10,6 +10,8 @@ public class main {
         JFrame frame = new JFrame("轻松转换");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JLabel lable = new JLabel("Text");
+        //设置窗口长宽
+
         frame.getContentPane().add(lable);
         frame.pack();
         frame.setVisible(true);
